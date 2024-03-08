@@ -3,7 +3,7 @@ Taller de Desarrollo CRUD
 
 En el presente código, se ha implementado una estructura basada en una arquitectura en capas, haciendo uso de un patrón de diseño Singleton y Strategy. Asimismo, se han adherido a los principios SOLID y de Programación Orientada a Objetos (POO).
 
-Capa CRUD:
+# Capa CRUD:
 Esta capa constituye el núcleo del archivo y alberga la lógica principal a la que deben adherirse las demás secciones del código.
 
 Detalle de las Funcionalidades en la Capa CRUD:
@@ -30,7 +30,7 @@ Cada una de estas clases concretas implementa la interfaz OperacionStrategy y pr
 
 Estas clases se han diseñado para ser utilizadas en conjunto con el patrón Strategy en la Capa CRUD, permitiendo una fácil extensión y modificación de las operaciones CRUD.
 
-# Ejemplo con la clase CrearOperacion
+Ejemplo con la clase CrearOperacion
 class CrearOperacion(OperacionStrategy):
     def __init__(self, crud):
         self.crud = crud
@@ -40,8 +40,8 @@ class CrearOperacion(OperacionStrategy):
         descripcion = input("Introduce la descripción de la tarea: ")
         self.crud.crear_tarea(titulo, descripcion)
 
-Capa Notas:
+# Capa Notas:
 Responsable de la presentación de datos en la terminal y de facilitar el acceso del usuario a las diversas funcionalidades proporcionadas.
 
-Capa NotasGuardado:
+# Capa NotasGuardado:
 Encargada de gestionar el almacenamiento, modificación y actualización de los datos, desempeñando así el papel de una base de datos.
