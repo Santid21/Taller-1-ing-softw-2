@@ -12,7 +12,7 @@ Se ha implementado el patrón Strategy para gestionar operaciones CRUD de manera
 
 Clase TareaNotFound:
 Esta clase extiende la excepción base y se utiliza para manejar situaciones en las que no se encuentra una tarea específica por su ID.
-class TareaNotFound(Exception):
+- class TareaNotFound(Exception):
     def __init__(self, id_tarea):
         self.id_tarea = id_tarea
         super().__init__(f"Tarea con ID {id_tarea} no encontrada.")
@@ -21,7 +21,7 @@ class TareaNotFound(Exception):
 Clase OperacionStrategy:
 Es una interfaz base que define el método ejecutar, el cual será implementado por las estrategias concretas.
 
-class OperacionStrategy:
+- class OperacionStrategy:
     def ejecutar(self):
         pass
 
